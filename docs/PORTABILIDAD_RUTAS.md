@@ -2,7 +2,7 @@
 
 <p align="center">
   <img
-    src="../assets/dcsa_portabilidad_rutas.png"
+    src="../assets/Manifiesto de Portabilidad y Rutas.png"
     alt="DCSA: portabilidad del código, configuración mediante variables de entorno y compatibilidad con Windows, Linux, macOS y Google Colab"
     width="100%"
   />
