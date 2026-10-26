@@ -1,5 +1,13 @@
 # Descripción de la Muestra y Diseño Observacional
 
+<p align="center">
+  <img
+    src="../assets/dcsa_muestra_diseno_portada.jpg"
+    alt="DCSA: diseño observacional de una cohorte clínica con seguimiento longitudinal y mediciones discursivas semanales y psicométricas quincenales"
+    width="100%"
+  />
+</p>
+
 Este documento presenta la caracterización agregada y el diseño metodológico de la cohorte analizada en el proyecto **DCSA**. Todos los datos se reportan a nivel de grupo para salvaguardar el anonimato y la confidencialidad de los participantes.
 
 ---
