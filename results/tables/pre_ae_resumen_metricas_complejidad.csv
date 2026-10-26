@@ -1,0 +1,5 @@
+Métrica,Media,DE,Mediana,IQR_o_Rango
+AR(1) de Hurwicz,0.25,0.425,0.158,"[-0.069, 0.617]"
+"Entropía de Permutación (m=3, tau=1)",0.843,0.111,0.865,"[0.777, 0.923]"
+Exponente de Hurst (R/S),0.525,0.086,0.535,"[0.476, 0.581]"
+Puntos de Cambio PELT (gamma=0.4),2.9,1.33,3.0,"Total: 90 [1, 7]"

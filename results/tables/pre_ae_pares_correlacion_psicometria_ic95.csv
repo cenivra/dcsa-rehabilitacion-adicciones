@@ -1,0 +1,16 @@
+Variable_1,Variable_2,N,Pearson_r,IC95_Pearson,p_valor_Pearson,Spearman_rho,p_valor_Spearman
+ATQ-8 (Pensamientos automáticos),GAD-7 (Ansiedad),256,0.425,"[0.319, 0.521]",<0.0001,0.514,<0.0001
+ATQ-8 (Pensamientos automáticos),BADS Activación,256,-0.259,"[-0.370, -0.141]",<0.0001,-0.284,<0.0001
+ATQ-8 (Pensamientos automáticos),BADS Evitación/Rumia,256,-0.383,"[-0.483, -0.273]",<0.0001,-0.514,<0.0001
+ATQ-8 (Pensamientos automáticos),EROS (Recompensa ambiental),256,-0.297,"[-0.405, -0.181]",<0.0001,-0.338,<0.0001
+ATQ-8 (Pensamientos automáticos),Índice de Rigidez Conductual (Ponderado),256,0.173,"[0.051, 0.289]",0.0055,0.149,0.0173
+GAD-7 (Ansiedad),BADS Activación,256,-0.244,"[-0.356, -0.125]",<0.0001,-0.252,<0.0001
+GAD-7 (Ansiedad),BADS Evitación/Rumia,256,-0.526,"[-0.609, -0.431]",<0.0001,-0.527,<0.0001
+GAD-7 (Ansiedad),EROS (Recompensa ambiental),256,-0.372,"[-0.473, -0.261]",<0.0001,-0.384,<0.0001
+GAD-7 (Ansiedad),Índice de Rigidez Conductual (Ponderado),256,0.053,"[-0.070, 0.175]",0.3970,0.109,0.0810
+BADS Activación,BADS Evitación/Rumia,256,0.114,"[-0.009, 0.233]",0.0687,0.167,0.0074
+BADS Activación,EROS (Recompensa ambiental),256,0.349,"[0.236, 0.452]",<0.0001,0.349,<0.0001
+BADS Activación,Índice de Rigidez Conductual (Ponderado),256,-0.497,"[-0.584, -0.399]",<0.0001,-0.438,<0.0001
+BADS Evitación/Rumia,EROS (Recompensa ambiental),256,0.246,"[0.127, 0.358]",<0.0001,0.287,<0.0001
+BADS Evitación/Rumia,Índice de Rigidez Conductual (Ponderado),256,0.246,"[0.128, 0.358]",<0.0001,0.172,0.0057
+EROS (Recompensa ambiental),Índice de Rigidez Conductual (Ponderado),256,-0.192,"[-0.308, -0.071]",0.0020,-0.158,0.0115

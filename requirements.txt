@@ -1,0 +1,34 @@
+# Dependencias de Python para DCSA-reproducibilidad
+# Entorno validado con Python 3.10 - 3.14 (64-bit)
+
+# ==============================================================================
+# 1. COMPUTACIÓN CIENTÍFICA, ÁLGEBRA Y MANIPULACIÓN DE DATOS (CONFIRMADO)
+# ==============================================================================
+numpy>=1.24.0,<2.0.0
+scipy>=1.10.0
+pandas>=2.0.0
+pyarrow>=14.0.0
+
+# ==============================================================================
+# 2. MODELADO ESTADÍSTICO, MACHINE LEARNING Y NLP (CONFIRMADO)
+# ==============================================================================
+scikit-learn>=1.3.0
+statsmodels>=0.14.0
+
+# ==============================================================================
+# 3. APRENDIZAJE PROFUNDO (AUTOENCODER MULTIMODAL MFCA-N1) (CONFIRMADO)
+# ==============================================================================
+torch>=2.0.0
+
+# ==============================================================================
+# 4. VISUALIZACIÓN CIENTÍFICA Y REDES COMPLEJAS (CONFIRMADO)
+# ==============================================================================
+matplotlib>=3.7.0
+seaborn>=0.12.0
+networkx>=3.0
+
+# ==============================================================================
+# 5. MODELO DE EMBEDDINGS PRE-ENTRENADO (DESCARGA REQUERIDA CON ACCESO)
+# ==============================================================================
+# sentence-transformers>=2.2.2  # Requerido únicamente para generar embeddings desde texto bruto
+# Modelo canónico: hiiamsid/sentence_similarity_spanish_es (768 dimensiones)

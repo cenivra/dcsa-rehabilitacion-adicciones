@@ -1,0 +1,4 @@
+Modelo,Log_Likelihood,AIC,Delta_AIC,BIC,RMSE,R2_marginal,R2_condicional,N_obs,N_participantes
+M1: Inercia pura (AR-1),-638.19,1284.38,5.15,1297.92,4.68,0.044,0.211,218,40
+M2: Psicométrico aumentado,-633.62,1279.23,0.0,1299.54,4.519,0.101,0.225,218,40
+M3: Híbrido Pre-AE,-633.26,1282.52,3.29,1309.6,4.517,0.102,0.228,218,40

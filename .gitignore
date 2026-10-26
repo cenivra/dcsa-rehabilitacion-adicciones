@@ -1,0 +1,132 @@
+# .gitignore — Repositorio DCSA-reproducibilidad
+# Protección rigurosa de privacidad, datos clínicos individuales y artefactos binarios pesados.
+
+# ==============================================================================
+# 1. BASES DE DATOS Y REGISTROS LOCALES (PRIVACIDAD ESTRICTA)
+# ==============================================================================
+*.sqlite
+*.sqlite3
+*.db
+*.mdb
+*.accdb
+*.sql
+*.dump
+
+# Archivos de datos primarios con narrativas o respuestas fila por fila
+datos/
+data/
+raw_data/
+narraciones/
+*.xlsx
+*.xls
+*.csv.raw
+*.tsv.raw
+*.parquet
+*.feather
+*.h5
+*.hdf5
+
+# Exclusión explícita de paneles longitudinales individuales
+panel_canonico_*.csv
+*narraciones*.sqlite
+*escalas*.sqlite
+
+# Tablas intermedias individuales (excluir archivos con microdatos individuales)
+*participantes*.csv
+*pacientes*.csv
+cobertura_longitudinal_participantes.csv
+metricas_complejidad_participantes.csv
+manifiesto_exclusion.csv
+
+# ==============================================================================
+# 2. CREDENCIALES, VARIABLES DE ENTORNO Y CLAVES
+# ==============================================================================
+# Archivos de variables de entorno reales (permitiendo la plantilla pública .env.example)
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+*.env
+!.env.example
+secrets/
+credentials/
+*.pem
+*.key
+*.token
+*_token.txt
+*api_key*
+*API_KEY*
+
+# ==============================================================================
+# 3. PESOS DE MODELOS, CHECKPOINTS Y ARTEFACTOS BINARIOS
+# ==============================================================================
+*.pt
+*.pth
+*.bin
+*.ckpt
+*.onnx
+*.safetensors
+*.pkl
+*.pickle
+*.joblib
+checkpoints/
+models/
+modelos/
+
+# ==============================================================================
+# 4. ENTORNOS VIRTUALES, CACHÉS Y ARCHIVOS TEMPORALES
+# ==============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ipynb_checkpoints/
+.virtual_documents/
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+
+venv/
+env/
+.venv/
+.conda/
+
+# ==============================================================================
+# 5. ARCHIVOS AUXILIARES DE COMPILACIÓN LATEX Y LOGS
+# ==============================================================================
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.lot
+*.lof
+
+# Logs del sistema y tareas
+logs/
+*.log
+*.stdout
+*.stderr
+
+# ==============================================================================
+# 6. HISTÓRICOS, RESPALDOS Y ARCHIVOS DE SISTEMA OPERATIVO
+# ==============================================================================
+_historico/
+historico/
+backup/
+backups/
+*.bak
+*.swp
+*.swo
+*~
+Thumbs.db
+Desktop.ini
+.DS_Store

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1060 590" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Arquitectura del Autoencoder MFCA-N1" id="diagrama1_arquitectura_mfca-root">
+        <defs>
+      <style>@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500;600&amp;family=Noto+Serif:ital@0;1&amp;family=Noto+Sans+KR:wght@400;500;600&amp;family=Noto+Serif+KR:wght@400&amp;family=Noto+Sans+TC:wght@400;500;600&amp;family=Noto+Serif+TC:wght@400&amp;display=swap');
+      #diagrama1_arquitectura_mfca-root { --color-paper:       #ffffff;
+      --color-ink:         #0f172a;
+      --color-muted:       #475569;
+      --color-subtle:      #64748b;
+      --color-border:      #cbd5e1;
+      --color-border-sub:  #e2e8f0;
+      --color-zone-bg:     #f8fafc;
+      --color-node-bg:     #ffffff;
+      --color-accent:      #1e3a8a; 
+      --color-accent-sub:  #2563eb;
+      --color-accent-bg:   #eff6ff;
+      --font-sans:         'Geist', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --font-mono:         'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace; }
+      #diagrama1_arquitectura_mfca-root { font-family: var(--font-sans); color: var(--color-ink); }
+      #diagrama1_arquitectura_mfca-root .diagram-container { width: 100%; overflow-x: auto; background: #ffffff; }
+      #diagrama1_arquitectura_mfca-root .zone-title { font-family: var(--font-mono); font-size: 11px; font-weight: 600; fill: #475569; letter-spacing: 0.08em; text-transform: uppercase; }
+      #diagrama1_arquitectura_mfca-root .node-title { font-family: var(--font-sans); font-size: 13px; font-weight: 600; fill: #0f172a; }
+      #diagrama1_arquitectura_mfca-root .node-tag { font-family: var(--font-mono); font-size: 9.5px; font-weight: 600; fill: #1e3a8a; letter-spacing: 0.04em; }
+      #diagrama1_arquitectura_mfca-root .node-sub { font-family: var(--font-mono); font-size: 10.5px; font-weight: 400; fill: #475569; }
+      #diagrama1_arquitectura_mfca-root .node-desc { font-family: var(--font-sans); font-size: 10px; font-weight: 400; fill: #64748b; }
+      #diagrama1_arquitectura_mfca-root .conn-label { font-family: var(--font-mono); font-size: 9px; font-weight: 500; fill: #475569; letter-spacing: 0.02em; }
+      #diagrama1_arquitectura_mfca-root .metric-val { font-family: var(--font-mono); font-size: 10.5px; font-weight: 600; fill: #1e3a8a; }
+      #diagrama1_arquitectura_mfca-root .metric-lbl { font-family: var(--font-sans); font-size: 10px; font-weight: 400; fill: #334155; }</style>
+          <marker id="diagrama1_arquitectura_mfca-arr-gray" markerWidth="7" markerHeight="6" refX="6" refY="3" orient="auto">
+            <polygon points="0 0, 7 3, 0 6" fill="#64748b"/>
+          </marker>
+          <marker id="diagrama1_arquitectura_mfca-arr-accent" markerWidth="7" markerHeight="6" refX="6" refY="3" orient="auto">
+            <polygon points="0 0, 7 3, 0 6" fill="#1e3a8a"/>
+          </marker>
+          <filter id="diagrama1_arquitectura_mfca-subtle-shadow" x="-4%" y="-4%" width="108%" height="108%" filterUnits="userSpaceOnUse">
+            <feDropShadow dx="0" dy="1" stdDeviation="1.5" flood-color="#0f172a" flood-opacity="0.06"/>
+          </filter>
+        </defs>
+
+        <!-- Background -->
+        <rect width="100%" height="100%" fill="#ffffff"/>
+
+        <!-- ======================================================= -->
+        <!-- ZONES (Structural containers)                           -->
+        <!-- ======================================================= -->
+        <!-- Zone 1: Entradas Observables -->
+        <rect x="30" y="40" width="220" height="390" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+        <text x="45" y="65" class="zone-title">1 · Entradas Observables</text>
+
+        <!-- Zone 2: Codificadores -->
+        <rect x="280" y="40" width="215" height="390" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+        <text x="295" y="65" class="zone-title">2 · Codificadores de Rama</text>
+
+        <!-- Zone 3: Cuello de Botella -->
+        <rect x="525" y="40" width="230" height="390" rx="8" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+        <text x="540" y="65" class="zone-title" fill="#1e3a8a">3 · Variedad Latente z_t</text>
+
+        <!-- Zone 4: Decodificadores Multihead -->
+        <rect x="785" y="40" width="245" height="390" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2"/>
+        <text x="800" y="65" class="zone-title">4 · Decodificadores (15 Cabezas)</text>
+
+        <!-- Zone 5: Validación Cruzada (Bottom Banner) -->
+        <rect x="30" y="450" width="1000" height="105" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+        <text x="50" y="475" class="zone-title">5 · Esquema de Validación y Regularización Out-of-Fold (OOF)</text>
+
+        <!-- ======================================================= -->
+        <!-- CONNECTORS (Drawn first so lines sit behind nodes)      -->
+        <!-- ======================================================= -->
+        <!-- Input 1 -> Encoder 1 -->
+        <path d="M 230 145 L 295 145" fill="none" stroke="#64748b" stroke-width="1.4" marker-end="url(#diagrama1_arquitectura_mfca-arr-gray)"/>
+        <!-- Input 2 -> Encoder 2 -->
+        <path d="M 230 330 L 295 330" fill="none" stroke="#64748b" stroke-width="1.4" marker-end="url(#diagrama1_arquitectura_mfca-arr-gray)"/>
+
+        <!-- Encoder 1 (128D) -> Latent Bottleneck (Orthogonal Fan-in) -->
+        <path d="M 475 145 H 510 V 215 H 540" fill="none" stroke="#1e3a8a" stroke-width="1.5" marker-end="url(#diagrama1_arquitectura_mfca-arr-accent)"/>
+        <!-- Encoder 2 (32D) -> Latent Bottleneck (Orthogonal Fan-in) -->
+        <path d="M 475 330 H 510 V 255 H 540" fill="none" stroke="#1e3a8a" stroke-width="1.5" marker-end="url(#diagrama1_arquitectura_mfca-arr-accent)"/>
+
+        <!-- Latent Bottleneck (64D) -> Head Text (Orthogonal Fan-out) -->
+        <path d="M 735 215 H 765 V 145 H 800" fill="none" stroke="#1e3a8a" stroke-width="1.5" marker-end="url(#diagrama1_arquitectura_mfca-arr-accent)"/>
+        <!-- Latent Bottleneck (64D) -> Head Psychometric (Orthogonal Fan-out) -->
+        <path d="M 735 255 H 765 V 330 H 800" fill="none" stroke="#1e3a8a" stroke-width="1.5" marker-end="url(#diagrama1_arquitectura_mfca-arr-accent)"/>
+
+        <!-- Connector mask tags -->
+        <rect x="488" y="172" width="44" height="15" rx="3" fill="#ffffff" stroke="#cbd5e1" stroke-width="0.8"/>
+        <text x="510" y="183" text-anchor="middle" class="conn-label">128D</text>
+
+        <rect x="492" y="282" width="36" height="15" rx="3" fill="#ffffff" stroke="#cbd5e1" stroke-width="0.8"/>
+        <text x="510" y="293" text-anchor="middle" class="conn-label">32D</text>
+
+        <rect x="746" y="172" width="38" height="15" rx="3" fill="#ffffff" stroke="#cbd5e1" stroke-width="0.8"/>
+        <text x="765" y="183" text-anchor="middle" class="conn-label">64D</text>
+
+        <rect x="746" y="282" width="38" height="15" rx="3" fill="#ffffff" stroke="#cbd5e1" stroke-width="0.8"/>
+        <text x="765" y="293" text-anchor="middle" class="conn-label">64D</text>
+
+        <!-- ======================================================= -->
+        <!-- NODES                                                   -->
+        <!-- ======================================================= -->
+
+        <!-- Node 1: Narrativas Textuales -->
+        <g id="node-text-input">
+          <rect x="45" y="85" width="190" height="120" rx="6" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2" filter="url(#diagrama1_arquitectura_mfca-subtle-shadow)"/>
+          <rect x="55" y="97" width="94" height="16" rx="3" fill="#f1f5f9"/>
+          <text x="60" y="109" class="node-tag">TEXTO CLÍNICO</text>
+          <text x="55" y="132" class="node-title">Narrativas Semanales</text>
+          <text x="55" y="152" class="node-sub">768D Sentence-Transf.</text>
+          <text x="55" y="170" class="node-desc">Normalización L2 unitaria</text>
+          <text x="55" y="185" class="node-desc">8 segmentos por semana</text>
+        </g>
+
+        <!-- Node 2: Psicometría Semanal -->
+        <g id="node-psycho-input">
+          <rect x="45" y="270" width="190" height="120" rx="6" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2" filter="url(#diagrama1_arquitectura_mfca-subtle-shadow)"/>
+          <rect x="55" y="282" width="96" height="16" rx="3" fill="#f1f5f9"/>
+          <text x="60" y="294" class="node-tag">PSICOMETRÍA</text>
+          <text x="55" y="317" class="node-title">Escalas y Derivadas</text>
+          <text x="55" y="337" class="node-sub">14D Vector numérico</text>
+          <text x="55" y="355" class="node-desc">7 escalas estandarizadas</text>
+          <text x="55" y="370" class="node-desc">+ 7 tasas de cambio (Δ)</text>
+        </g>
+
+        <!-- Node 3: Codificador Textual -->
+        <g id="node-text-encoder">
+          <rect x="295" y="85" width="185" height="120" rx="6" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2" filter="url(#diagrama1_arquitectura_mfca-subtle-shadow)"/>
+          <rect x="305" y="97" width="96" height="16" rx="3" fill="#f1f5f9"/>
+          <text x="310" y="109" class="node-tag">RED DENSA MLP</text>
+          <text x="305" y="132" class="node-title">Codificador Textual</text>
+          <text x="305" y="152" class="node-sub">768 → 256 → 128</text>
+          <text x="305" y="170" class="node-desc">Activación GELU / LayerNorm</text>
+          <text x="305" y="185" class="node-desc">Dropout p = 0.20</text>
+        </g>
+
+        <!-- Node 4: Codificador Psicométrico -->
+        <g id="node-psycho-encoder">
+          <rect x="295" y="270" width="185" height="120" rx="6" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2" filter="url(#diagrama1_arquitectura_mfca-subtle-shadow)"/>
+          <rect x="305" y="282" width="96" height="16" rx="3" fill="#f1f5f9"/>
+          <text x="310" y="294" class="node-tag">RED FEEDFORWARD</text>
+          <text x="305" y="317" class="node-title">Codificador Escalas</text>
+          <text x="305" y="337" class="node-sub">14 → 64 → 32</text>
+          <text x="305" y="355" class="node-desc">Activación LeakyReLU</text>
+          <text x="305" y="370" class="node-desc">Dropout p = 0.10</text>
+        </g>
+
+        <!-- Node 5: Cuello de Botella Latente (Focal Accent Node) -->
+        <g id="node-latent-bottleneck">
+          <rect x="540" y="115" width="200" height="240" rx="8" fill="#ffffff" stroke="#1e3a8a" stroke-width="2.2" filter="url(#diagrama1_arquitectura_mfca-subtle-shadow)"/>
+          <rect x="552" y="130" width="125" height="18" rx="3" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
+          <text x="558" y="143" class="node-tag" fill="#1e3a8a">CUELLO DE BOTELLA</text>
+          <text x="552" y="172" class="node-title" font-size="15px">Espacio Latente z_t</text>
+          <text x="552" y="193" class="node-sub" font-size="12px" fill="#1e3a8a">Dimensión nominal: 64D</text>
+
+          <!-- Divider inside card -->
+          <line x1="552" y1="208" x2="728" y2="208" stroke="#e2e8f0" stroke-width="1"/>
+
+          <!-- Structural Diagnostics -->
+          <text x="552" y="228" class="metric-lbl">Rango efectivo (Roy-Vett.):</text>
+          <text x="552" y="244" class="metric-val">35.4 dims (55.3 %)</text>
+
+          <text x="552" y="268" class="metric-lbl">Varianza Top 5 PCs:</text>
+          <text x="552" y="284" class="metric-val">62.1 % acumulada</text>
+
+          <text x="552" y="308" class="metric-lbl">Preservación geométrica:</text>
+          <text x="552" y="324" class="metric-val">r = 0.58 (distancias rel.)</text>
+
+          <text x="552" y="344" class="node-desc">Sin colapso dimensional trivial</text>
+        </g>
+
+        <!-- Node 6: Cabezales Textuales Residuales -->
+        <g id="node-text-decoders">
+          <rect x="800" y="85" width="215" height="120" rx="6" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2" filter="url(#diagrama1_arquitectura_mfca-subtle-shadow)"/>
+          <rect x="810" y="97" width="132" height="16" rx="3" fill="#f1f5f9"/>
+          <text x="815" y="109" class="node-tag">8 CABEZAS RESIDUALES</text>
+          <text x="810" y="132" class="node-title">Reconstrucción Textual</text>
+          <text x="810" y="152" class="node-sub">r̂_t = x_txt - μ_tr_int</text>
+          <text x="810" y="170" class="node-desc">Pérdida combinada: MSE + Cos</text>
+          <text x="810" y="185" class="node-desc">Similitud coseno: 0.52 a 0.63</text>
+        </g>
+
+        <!-- Node 7: Cabezales Psicométricos -->
+        <g id="node-psycho-decoders">
+          <rect x="800" y="270" width="215" height="120" rx="6" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2" filter="url(#diagrama1_arquitectura_mfca-subtle-shadow)"/>
+          <rect x="810" y="282" width="135" height="16" rx="3" fill="#f1f5f9"/>
+          <text x="815" y="294" class="node-tag">7 CABEZAS PSICOMÉTRICAS</text>
+          <text x="810" y="317" class="node-title">Reconstrucción Escalas</text>
+          <text x="810" y="337" class="node-sub">ŷ_t ∈ ℝ¹ (7 escalas individuales)</text>
+          <text x="810" y="355" class="node-desc">Pérdida MSE cuadrática directa</text>
+          <text x="810" y="370" class="node-desc">Ganancia sobre media: 26% a 76%</text>
+        </g>
+
+        <!-- ======================================================= -->
+        <!-- ZONE 5 DETAILS (OOF VALIDATION PROTOCOL)                -->
+        <!-- ======================================================= -->
+        <g id="zone-validation-content">
+          <!-- Item 1: Partición -->
+          <rect x="50" y="490" width="290" height="50" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+          <text x="65" y="510" class="node-title" font-size="11.5px">Partición GroupKFold (5 Pliegues)</text>
+          <text x="65" y="527" class="node-desc">Agrupación estricta por participante (N=41, 0% fuga)</text>
+
+          <!-- Item 2: Parada Temprana -->
+          <rect x="360" y="490" width="310" height="50" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+          <text x="375" y="510" class="node-title" font-size="11.5px">Parada Temprana en Validación Interna</text>
+          <text x="375" y="527" class="node-desc">Paciencia 15 épocas (convergencia óptima 34–51 épocas)</text>
+
+          <!-- Item 3: Regularización Sin Fuga -->
+          <rect x="690" y="490" width="325" height="50" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+          <text x="705" y="510" class="node-title" font-size="11.5px">Línea Base Libre de Fuga (tr_int)</text>
+          <text x="705" y="527" class="node-desc">Media residual calculada estrictamente en entrenamiento interno</text>
+        </g>
+      </svg>

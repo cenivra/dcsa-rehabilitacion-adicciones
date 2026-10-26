@@ -1,0 +1,240 @@
+{
+  "generado": "2026-10-02",
+  "fuente": "escalas_completas_items.sqlite",
+  "regla": "Una familia = ítems que comparten instrumento y constructo. El prototipo de una familia es su respuesta media por persona (y su media entre personas por tiempo).",
+  "familias_escala": [
+    {
+      "id": "bads_activacion",
+      "instrumento": "BADS",
+      "items": [
+        "P3",
+        "P4",
+        "P5",
+        "P7",
+        "P11",
+        "P12",
+        "P23"
+      ],
+      "n_items": 7,
+      "min_total": 0.0,
+      "max_total": 42.0,
+      "analisis_usuario": false,
+      "etiqueta": "Activación"
+    },
+    {
+      "id": "bads_afectacion_social",
+      "instrumento": "BADS",
+      "items": [
+        "P16",
+        "P17",
+        "P18",
+        "P19",
+        "P20"
+      ],
+      "n_items": 5,
+      "min_total": 0.0,
+      "max_total": 30.0,
+      "analisis_usuario": false,
+      "etiqueta": "Afectación de la vida social"
+    },
+    {
+      "id": "bads_afectacion_trabajo",
+      "instrumento": "BADS",
+      "items": [
+        "P1",
+        "P2",
+        "P6",
+        "P21",
+        "P22"
+      ],
+      "n_items": 5,
+      "min_total": 0.0,
+      "max_total": 30.0,
+      "analisis_usuario": false,
+      "etiqueta": "Afectación del trabajo"
+    },
+    {
+      "id": "bads_evitacion_rumia",
+      "instrumento": "BADS",
+      "items": [
+        "P8",
+        "P9",
+        "P10",
+        "P13",
+        "P14",
+        "P15",
+        "P24",
+        "P25"
+      ],
+      "n_items": 8,
+      "min_total": 0.0,
+      "max_total": 48.0,
+      "analisis_usuario": false,
+      "etiqueta": "Evitación/Rumia"
+    },
+    {
+      "id": "eros_pd",
+      "instrumento": "EROS",
+      "items": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P6",
+        "P7",
+        "P8",
+        "P9",
+        "P10"
+      ],
+      "n_items": 10,
+      "min_total": 0.0,
+      "max_total": 40.0,
+      "analisis_usuario": false,
+      "etiqueta": "PD (puntaje directo)"
+    },
+    {
+      "id": "gad7_total",
+      "instrumento": "GAD7",
+      "items": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P6",
+        "P7"
+      ],
+      "n_items": 7,
+      "min_total": 0.0,
+      "max_total": 21.0,
+      "analisis_usuario": false,
+      "etiqueta": "Total"
+    },
+    {
+      "id": "atq8_total",
+      "instrumento": "ATQ8",
+      "items": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P6",
+        "P7",
+        "P8"
+      ],
+      "n_items": 8,
+      "min_total": 8.0,
+      "max_total": 40.0,
+      "analisis_usuario": false,
+      "etiqueta": "Total"
+    },
+    {
+      "id": "bads_alt_activacion_autonoma",
+      "instrumento": "BADS",
+      "items": [],
+      "n_items": 0,
+      "analisis_usuario": true,
+      "nota": "compuesto de validación del usuario; se documenta, no se interpreta",
+      "etiqueta": "Activación autonoma"
+    },
+    {
+      "id": "bads_alt_activacion_forzada",
+      "instrumento": "BADS",
+      "items": [],
+      "n_items": 0,
+      "analisis_usuario": true,
+      "nota": "compuesto de validación del usuario; se documenta, no se interpreta",
+      "etiqueta": "Activación forzada"
+    },
+    {
+      "id": "bads_alt_deterioro_funcional",
+      "instrumento": "BADS",
+      "items": [],
+      "n_items": 0,
+      "analisis_usuario": true,
+      "nota": "compuesto de validación del usuario; se documenta, no se interpreta",
+      "etiqueta": "Deterioro funcional"
+    },
+    {
+      "id": "bads_alt_evitacion",
+      "instrumento": "BADS",
+      "items": [],
+      "n_items": 0,
+      "analisis_usuario": true,
+      "nota": "compuesto de validación del usuario; se documenta, no se interpreta",
+      "etiqueta": "Evitación"
+    }
+  ],
+  "familias_pregunta": [
+    {
+      "n": 1,
+      "id": "q1_descripcion_semana",
+      "columna_texto": "descripcion_semana",
+      "cerradas": []
+    },
+    {
+      "n": 2,
+      "id": "q2_desafios_encontrados",
+      "columna_texto": "desafios_encontrados",
+      "cerradas": [
+        "frecuencia_desafío",
+        "desafío_similar_semana_anterior"
+      ]
+    },
+    {
+      "n": 3,
+      "id": "q3_estrategias_afrontamiento",
+      "columna_texto": "estrategias_afrontamiento",
+      "cerradas": [
+        "estrategia_principal"
+      ]
+    },
+    {
+      "n": 4,
+      "id": "q4_emociones_experimentadas",
+      "columna_texto": "emociones_experimentadas",
+      "cerradas": [
+        "emocion_principal_nombre",
+        "emocion_principal_intensidad",
+        "manejo_emociones",
+        "intensidad_emocional_promedio"
+      ]
+    },
+    {
+      "n": 5,
+      "id": "q5_progresos_logros",
+      "columna_texto": "progresos_logros",
+      "cerradas": [
+        "meta_alineada_lp"
+      ]
+    },
+    {
+      "n": 6,
+      "id": "q6_reflexiones_personales",
+      "columna_texto": "reflexiones_personales",
+      "cerradas": []
+    },
+    {
+      "n": 7,
+      "id": "q7_metas_proxima_semana",
+      "columna_texto": "metas_proxima_semana",
+      "cerradas": [
+        "meta_alineada_lp"
+      ]
+    },
+    {
+      "n": 8,
+      "id": "q8_comentarios_adicionales",
+      "columna_texto": "comentarios_adicionales",
+      "cerradas": []
+    }
+  ],
+  "prototipos": {
+    "definicion": "por familia y persona: media de sus ítems en el tiempo; por familia y tiempo: media entre personas",
+    "normalizacion": "cada familia se lleva a [0,1] con su min/max teórico antes de entrar al modelo",
+    "familias_escala": 7,
+    "familias_pregunta": 8
+  }
+}

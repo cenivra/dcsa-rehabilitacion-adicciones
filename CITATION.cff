@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Si utilizas este repositorio, por favor cita el software como se indica a continuación."
+authors:
+  - given-names: "Lauro Gutiérrez Castro"
+    family-names: "Proyecto DCSA"
+title: "Análisis de sistemas clínicos dinámicos (DCSA) en rehabilitación de adicciones: índices de inestabilidad, transiciones y resiliencia"
+version: 1.0.0
+date-released: 2026-10-26
+url: "https://github.com/cenivra/dcsa-rehabilitacion-adicciones"
+abstract: "Repositorio de reproducción científica del proyecto DCSA, enfocado en el modelado computacional y longitudinal de procesos de recuperación en personas con trastornos por uso de sustancias (TUS) en internamiento residencial."
+keywords:
+  - trastornos por uso de sustancias
+  - dinámica compleja
+  - sistemas adaptativos
+  - modelo computacional
+  - reproducción científica
+license: Restringida
+repository-code: "https://github.com/cenivra/dcsa-rehabilitacion-adicciones"
