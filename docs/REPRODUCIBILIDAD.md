@@ -1,5 +1,13 @@
 # Protocolo de Reproducibilidad Computacional y Pipelines Canónicos
 
+<p align="center">
+  <img
+    src="../assets/dcsa_reproducibilidad_pipelines.jpg"
+    alt="DCSA: reproducibilidad computacional, trazabilidad de pipelines analíticos, portabilidad de configuración y validación metodológica"
+    width="100%"
+  />
+</p>
+
 Este documento describe la trazabilidad técnica, las dependencias de software, los puntos de entrada analíticos, la portabilidad de rutas y los procedimientos de validación implementados en el repositorio **DCSA-reproducibilidad**.
 
 ---
@@ -42,6 +50,18 @@ Para evitar dependencias rígidas de rutas absolutas locales de un entorno parti
 ---
 
 ## 3. Pipeline de análisis pre-autoencoder (`src/pre_ae/`)
+
+<p align="center">
+  <img
+    src="../assets/dcsa_pipelines_pre_ae_mfca_n1.jpg"
+    alt="Arquitectura de los pipelines DCSA: análisis longitudinal, asociaciones estadísticas, agrupamiento semántico, modelos temporales y pipeline de autoencoder multimodal MFCA-N1 con espacio latente de 64 dimensiones y validación cruzada agrupada por participante"
+    width="100%"
+  />
+</p>
+
+<p align="center">
+  <em>Figura. Visión integrada de los pipelines pre-autoencoder y MFCA-N1. El análisis pre-autoencoder permite obtener resultados estadísticos y temporales directamente; el pipeline multimodal aborda la codificación y reconstrucción de información textual y psicométrica.</em>
+</p>
 
 - **Script principal:** [`src/pre_ae/ejecutar_analisis_pre_ae_canonico.py`](src/pre_ae/ejecutar_analisis_pre_ae_canonico.py) (1,177 líneas).
 - **Procedencia:** Copia directa adaptada para portabilidad desde `src/DCSA_AMEDYSC/ejecutar_analisis_pre_ae_canonico.py`.
