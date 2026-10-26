@@ -1,5 +1,13 @@
 # Inventario de Tablas, Figuras y Artefactos Científicos Agregados
 
+<p align="center">
+  <img
+    src="../assets/dcsa_inventario_portada.jpg"
+    alt="DCSA: inventario de resultados estadísticos agregados, figuras científicas, diagramas metodológicos y artefactos reproducibles"
+    width="100%"
+  />
+</p>
+
 Este documento detalla el inventario real y verificado de tablas estadísticas y figuras científicas presentes en las carpetas `results/tables/` y `results/figures/` del repositorio **DCSA-reproducibilidad**.
 
 Todos los materiales incorporados corresponden exclusivamente a resúmenes agregados, modelos estadísticos y representaciones gráficas libres de datos sensibles o microdatos individuales.
