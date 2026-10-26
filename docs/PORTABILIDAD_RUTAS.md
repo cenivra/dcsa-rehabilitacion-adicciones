@@ -1,5 +1,13 @@
 # Manifiesto de Portabilidad y Estandarización de Rutas
 
+<p align="center">
+  <img
+    src="../assets/dcsa_portabilidad_rutas.png"
+    alt="DCSA: portabilidad del código, configuración mediante variables de entorno y compatibilidad con Windows, Linux, macOS y Google Colab"
+    width="100%"
+  />
+</p>
+
 Este documento registra las modificaciones de infraestructura implementadas en el repositorio **DCSA-reproducibilidad** para eliminar dependencias rígidas de rutas absolutas locales, suprimir nombres de usuario y rutas personales del entorno de desarrollo de origen, y garantizar la portabilidad del código en múltiples plataformas (Windows, Linux, macOS y Google Colab).
 
 ---
