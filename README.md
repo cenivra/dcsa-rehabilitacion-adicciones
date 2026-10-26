@@ -1,5 +1,13 @@
 # DCSA: Dinámica Compleja y Sistemas Adaptativos en Trastornos por Uso de Sustancias
 
+<p align="center">
+  <img
+    src="assets/dcsa_portada.jpg"
+    alt="DCSA: visualización conceptual de sistemas clínicos dinámicos, trayectorias longitudinales, transiciones y representaciones multimodales"
+    width="100%"
+  />
+</p>
+
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)](https://jupyter.org/)
 [![License](https://img.shields.io/badge/License-Restringida-lightgrey.svg)](LICENSE.md)
